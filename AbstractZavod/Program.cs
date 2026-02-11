@@ -4,13 +4,14 @@ ChainikovZavod chainikovZavod = new ChainikovZavod();
 HolodilnikovZavod holodilnikovZavod = new HolodilnikovZavod();
 Kavaz kavaz = new Kavaz();
 Fabrica fabrica = new Fabrica();
-IPredpiyatie zavod = new Fabrica();
+
+IPredpiyatie zavod2 = new Fabrica();
+
 
 kavaz.Proizvodit();
 holodilnikovZavod.Proizvodit();
 chainikovZavod.Proizvodit();
-fabrica.Realization();
-Zapusk(zavod);
+zavod2.Realization();
 
 IPredpiyatie kavazPredpriyatie = kavaz;
 IPredpiyatie holodilnikovPredpriyatie = holodilnikovZavod;
@@ -22,10 +23,7 @@ kavazPredpriyatie.Realization();
 holodilnikovPredpriyatie.Realization();
 chainikovPredpriyatie.Realization();
 
- static void Zapusk(IPredpiyatie ipred)
- {
-     ipred.Realization();
- }
+
 
 
 Console.ReadLine();

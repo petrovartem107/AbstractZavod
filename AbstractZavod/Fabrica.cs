@@ -8,9 +8,9 @@ namespace AbstractZavod
 {
     internal class Fabrica : IPredpiyatie
     {
-        public void Realization()
+        void IPredpiyatie.Realization()
         {
-            Console.WriteLine("Фабрика делает из ткани одежду");
+            Console.WriteLine("Если только так");
         }
     }
 }
